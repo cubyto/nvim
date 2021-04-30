@@ -32,7 +32,7 @@ set splitright
 set autoindent
 set smarttab
 "set shiftwidth=4
-"set showtabline=4
+set showtabline=4
 set formatoptions-=cro
 set hidden
 set fileencoding=utf-8
