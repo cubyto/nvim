@@ -37,7 +37,6 @@ set formatoptions-=cro
 set hidden
 set fileencoding=utf-8
 set ruler
-set background=dark
 set autochdir
 filetype on
 filetype indent on
