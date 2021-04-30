@@ -6,6 +6,7 @@ set mouse=a "Esto habilita la compatibilidad con el mouse
 set clipboard=unnamedplus "Para configurar el portapapeles principal en vim, necesitamos xclip o xcel, otro valor no tiene nombre
 set noerrorbells "Esto deshabilita las campanas de error porque es muy molesto
 
+
 " Para configurar las pestañas
 
 set sw=4 "La teacla tab equivale a 4 espacios
