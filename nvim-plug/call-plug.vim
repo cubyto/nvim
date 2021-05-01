@@ -1,7 +1,6 @@
 call plug#begin('~/.local/share/nvim/PlugInstalled')
 
 "Themes
-Plug 'kjwon15/vim-transparent'
 Plug 'hiroakis/cyberspace.vim'
 Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'bignimbus/pop-punk.vim'

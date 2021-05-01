@@ -6,6 +6,6 @@ highlight link JavaIdentifier NONE
 
 " Ajustar el resaltado de Python
 let g:python_highlight_all = 1
-set background = dark
 set termguicolors
+set background=dark
 
