@@ -18,7 +18,7 @@ return require('packer').startup(function(use)
 	
 	-- Theme - Line - Dashboard
 	use "oxfist/night-owl.nvim"
-  	use "bluz71/vim-nightfly-colors"
+	use "bluz71/vim-nightfly-colors"
 
 	use "glepnir/dashboard-nvim"
 
@@ -31,14 +31,15 @@ return require('packer').startup(function(use)
 	-- nvim tree for sidebar && telescope
 	use "nvim-tree/nvim-tree.lua"
 	use "nvim-tree/nvim-web-devicons"
+	use 'ryanoasis/vim-devicons'
 	use "nvim-treesitter/nvim-treesitter"
 	use {
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.0",
 		requires = {
 			"nvim-lua/plenary.nvim",
-			"nvim-telescope/telescope-fzf-native.nvim", build = "make" 
-		
+			"nvim-telescope/telescope-fzf-native.nvim", build = "make",
+			"nvim-telescope/telescope-file-browser.nvim"
 	}}
 	use "stevearc/dressing.nvim"
 	
@@ -55,6 +56,7 @@ return require('packer').startup(function(use)
 	use "saadparwaiz1/cmp_luasnip"
 
 	-- Formatter
+	use "stevearc/conform.nvim"
 	
 	-- lsp -> Languaje Server Protocols
 	use {
@@ -70,6 +72,6 @@ return require('packer').startup(function(use)
 	--
   if packer_bootstrap then
     require('packer').sync()
-se "williamboman/mason.nvim"
+	use "williamboman/mason.nvim"
   end
 end)
