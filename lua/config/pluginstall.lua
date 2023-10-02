@@ -57,7 +57,8 @@ return require('packer').startup(function(use)
 
 	-- Formatter
 	use "stevearc/conform.nvim"
-	
+  use "mfussenegger/nvim-lint"
+  
 	-- lsp -> Languaje Server Protocols
 	use {
 		"williamboman/mason.nvim",
@@ -66,7 +67,8 @@ return require('packer').startup(function(use)
 		"glepnir/lspsaga.nvim", branch = "main", --type window like vscode
 		"jose-elias-alvarez/typescript.nvim",
 		"onsails/lspkind.nvim",
-		"antosha417/nvim-lsp-file-operations"
+		"antosha417/nvim-lsp-file-operations",
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
 	}
 	-- end of plugins section
 	--
