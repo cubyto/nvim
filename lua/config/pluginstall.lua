@@ -30,6 +30,7 @@ return require('packer').startup(function(use)
 
   use "yamatsum/nvim-cursorline"
   use {"akinsho/bufferline.nvim", tag = "*"}
+  use "NvChad/nvim-colorizer.lua"
 
 	-- nvim tree for sidebar && telescope
 	use "nvim-tree/nvim-tree.lua"
@@ -42,11 +43,18 @@ return require('packer').startup(function(use)
 		requires = {
 			"nvim-lua/plenary.nvim",
 			"nvim-telescope/telescope-fzf-native.nvim", build = "make",
-			"nvim-telescope/telescope-file-browser.nvim"
+			"nvim-telescope/telescope-file-browser.nvim",
 	}}
 	use "stevearc/dressing.nvim"
-	
-	-- Completions
+
+  -- GIT
+  use {
+    "lewis6991/gitsigns.nvim",
+    "tpope/vim-fugitive",
+    "tpope/vim-rhubarb",
+    "aaronhallaert/advanced-git-search.nvim",
+  }
+  -- Completions
 	use "hrsh7th/nvim-cmp"
 	use "hrsh7th/cmp-buffer"
 	use "hrsh7th/cmp-path"

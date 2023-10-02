@@ -16,7 +16,7 @@ buffline.setup({
       enabled = true,
       delay = 200,
       reveal = { "close" }
+    },
+  separator_style = "slant",
   },
-  styling = "padded_slope"
-  }
 })
