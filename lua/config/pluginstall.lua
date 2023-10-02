@@ -24,9 +24,12 @@ return require('packer').startup(function(use)
 
 	use "nvim-lualine/lualine.nvim"
 	
-	-- autopairs
+	-- Appearance
 	use "windwp/nvim-autopairs"
 	use "windwp/nvim-ts-autotag"
+
+  use "yamatsum/nvim-cursorline"
+  use {"akinsho/bufferline.nvim", tag = "*"}
 
 	-- nvim tree for sidebar && telescope
 	use "nvim-tree/nvim-tree.lua"
@@ -70,6 +73,12 @@ return require('packer').startup(function(use)
 		"antosha417/nvim-lsp-file-operations",
     "WhoIsSethDaniel/mason-tool-installer.nvim",
 	}
+
+  use {
+    "folke/noice.nvim",
+    "MunifTanjim/nui.nvim",
+    "rcarriga/nvim-notify"
+  }
 	-- end of plugins section
 	--
   if packer_bootstrap then
