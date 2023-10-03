@@ -183,10 +183,5 @@ lspconfig["lua_ls"].setup({
         },
       },
     })
-lspconfig.rust_analyzer.setup({
-    server = {
-        capabilities = capabilities,
-        on_attach = on_attach
-    }
-})
+
 

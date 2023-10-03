@@ -28,7 +28,6 @@ mason_lspconfig.setup({
 		"lua_ls",
 		"tailwindcss",
 		"tsserver",
-		"rust_analyzer",
 		"arduino_language_server",
 		"dockerls",
 		"jsonls",
