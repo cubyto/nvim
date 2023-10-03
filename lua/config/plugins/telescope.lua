@@ -68,7 +68,7 @@ vim.keymap.set("n", "<leader>fc", builtin.grep_string, { desc = "Find string und
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
 
 -- File - Browser
-vim.api.nvim_set_keymap("n", "<leader>fb", ":Telescope file_browser<CR>", { desc = "Find browser" })
+vim.api.nvim_set_keymap("n", "<leader>fb", ":Telescope file_browser<CR>", { silent = true })
 
 -- GIT search
 vim.keymap.set("n", "<leader>gs", builtin.git_status, { desc = "Show the git status" })
