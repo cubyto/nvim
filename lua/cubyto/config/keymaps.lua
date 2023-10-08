@@ -1,3 +1,6 @@
+-- We define the leader map
+vim.g.mapleader = " "
+---Define the mapleader
 local keymap = vim.keymap -- for conciseness
 -- This keybinding use JK as the scape key, to exit a mode
 vim.api.nvim_set_keymap("i", "jk","<ESC>", {noremap = true})
@@ -5,8 +8,8 @@ vim.api.nvim_set_keymap("i", "jk","<ESC>", {noremap = true})
 -- This keymap clears search
 keymap.set("n", "<leader>h", ":nohl<CR>")
 
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true }) -- Make a file executable
-
+keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true }) -- Make a file executable
+keymap.set("n", "<leader>nf", ":ene<CR>", { silent = true}, { noremap = true})
 -- Moves buffer
 keymap.set("n", "<leader>k", ":bn<CR>", { silent = true }, { noremap = true }) -- Next buffers{ silent = true }
 keymap.set("n", "<leader>j", ":bp<CR>", { silent = true }, { noremap = true }) -- previous buffer

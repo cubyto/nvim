@@ -1,7 +1,7 @@
 return {
   "akinsho/bufferline.nvim",
   dependencies = { "nvim-tree/nvim-web-devicons" },
-  opt = {
+  opts = {
     options = {
        diagnostics_indicator = function(count, level, diagnostics_dict, context)
         local s = " "
@@ -10,7 +10,7 @@ return {
             or (e == "warning" and " " or "" )
           s = s .. n .. sym
         end
-        return s
+        return
       end,
       hover = {
         enabled = true,

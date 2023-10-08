@@ -1,6 +1,4 @@
 local opt = vim.opt -- for conciceness
----Define the mapleader
-vim.g.mapleader = " "
 
 --- line numbers
 opt.relativenumber = true -- show relative line numbers

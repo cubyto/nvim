@@ -68,6 +68,7 @@ return {
     })
     require("telescope").load_extension "file_browser"
     require("telescope").load_extension "advanced_git_search" 
+    require("telescope").load_extension "neoclip" 
     
     local builtin = require("telescope.builtin")
     
@@ -88,5 +89,8 @@ return {
     vim.keymap.set("n", "<leader>gc", builtin.git_commits, { desc = "Show the git commits" })
     vim.keymap.set("n", "<leader>gB", builtin.git_bcommits, { desc = "Show the git Bcommits" })
     vim.keymap.set("n", "<leader>gf", builtin.git_files, { desc = "Show the git files" })
+
+    -- NEOCLIP search
+   vim.api.nvim_set_keymap("n", "<leader>cb", ":Telescope neoclip<CR>", { silent = true}) 
   end,
 }

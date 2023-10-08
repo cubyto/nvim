@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({ { import = "cubyto.plugins" }, { import = "cubyto.plugins.lsp" } }, {
+require("lazy").setup({{ import = "cubyto.plugins" }, { import = "cubyto.plugins.lsp"}}, {
     install = {
       colorscheme = { "night-owl" },
     },
