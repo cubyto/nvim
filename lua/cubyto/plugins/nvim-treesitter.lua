@@ -45,7 +45,8 @@ return {
           "php",
           "python",
           "matlab",
-          "fish"
+          "fish",
+          "luadoc"
         },
         incremental_selection = {
           enable = true,

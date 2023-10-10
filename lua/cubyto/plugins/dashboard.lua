@@ -38,7 +38,7 @@ return{
             {
               icon = '🔍📂 ',
               desc = 'Find  File                              ',
-              action = 'Telescope find_files,-hidden,--files',
+              action = 'Telescope find_files',
               key = 'Space f f'
             },
             {
